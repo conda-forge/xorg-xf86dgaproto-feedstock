@@ -14,14 +14,16 @@ Summary: Print extension headers
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xorg-xf86dgaproto-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xorg-xf86dgaproto-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xorg-xf86dgaproto-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xorg-xf86dgaproto-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xorg-xf86dgaproto-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xorg-xf86dgaproto-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xorg-xf86dgaproto-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xorg-xf86dgaproto-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/xorg-xf86dgaproto-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xorg-xf86dgaproto-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xorg-xf86dgaproto-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xorg-xf86dgaproto-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xorg-xf86dgaproto/badges/version.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xorg-xf86dgaproto/badges/downloads.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xorg--xf86dgaproto-green.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xorg-xf86dgaproto.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xorg-xf86dgaproto.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xorg-xf86dgaproto.svg)](https://anaconda.org/conda-forge/xorg-xf86dgaproto) |
 
 Installing xorg-xf86dgaproto
 ============================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
