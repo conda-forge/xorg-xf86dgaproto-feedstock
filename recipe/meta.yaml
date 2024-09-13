@@ -15,7 +15,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 1002
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -40,9 +40,10 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'Print extension headers'
+  summary: XFree86 Direct Graphic Access Extension
 
 extra:
   recipe-maintainers:
     - epruesse
     - pkgw
+    - ehfd
