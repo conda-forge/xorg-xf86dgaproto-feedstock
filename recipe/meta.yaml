@@ -3,7 +3,7 @@
 {% set name = "xorg-" ~ xorg_name %}
 {% set version = "2.1" %}
 {% set sha256 = "ac5ef65108e1f2146286e53080975683dae49fc94680042e04bd1e2010e99050" %}
-{% set am_version = "1.15" %} # keep synchronized with build.sh
+{% set am_version = "1.16" %} # keep synchronized with build.sh
 
 package:
   name: {{ name|lower }}
@@ -15,22 +15,26 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
-  detect_binary_files_with_prefix: true
+  number: 1003
 
 requirements:
   build:
-    - m2-autoconf  # [win]
-    - m2-automake{{ am_version }}  # [win]
-    - m2-libtool  # [win]
     - pkg-config
-    - m2-base  # [win]
-    - make  # [unix]
-    - m2-make  # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ stdlib("c") }}          # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ stdlib("m2w64_c") }}    # [win]
+    - m2-autoconf                  # [win]
+    - m2-automake{{ am_version }}  # [win]
+    - m2-libtool                   # [win]
+    - m2-base                      # [win]
+    - m2-make                      # [win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
+    - {{ compiler('c') }}          # [unix]
+    - {{ stdlib("c") }}            # [unix]
+    - make                         # [unix]
+    - gnuconfig                    # [unix]
+    - autoconf                     # [unix]
+    - automake                     # [unix]
+    - gettext                      # [unix]
+    - libtool                      # [unix]
   host:
     - xorg-util-macros
 
@@ -49,3 +53,4 @@ extra:
   recipe-maintainers:
     - epruesse
     - pkgw
+    - ehfd
